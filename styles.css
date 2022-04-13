@@ -8,7 +8,6 @@
 /*
  -- Variables
 */
-
 :root {
 
     /* --- Colours --- */
@@ -24,13 +23,32 @@
     --dktp: 90em;
 }
 
+/*
+ -- Set-up & Tags
+*/
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color: var(--trans-white-p);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-sm);
+}
+
+h2 {
+    margin: 0;
     font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+
+p {
     font-size: var(--font-sm);
 }
 
@@ -38,10 +56,85 @@ img {
     max-width: 100%;
 }
 
-.container {
-    width: 80%;
-    max-width: var(--dktp);
+section {
+    padding: 2.5em;
+    color: var(--trans-white-p);
 }
 
+section:first-child {
+    margin-top: 5.5em;
+    border-radius: .5em .5em 0 0;
+}
+
+section:last-child {
+    border-radius: 0 0 .5em .5em;
+    margin-bottom: 5.5em;
+}
+
+/*
+ -- Custom Classes
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: var(--mob);
+    margin: 0 auto;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.img-icon {
+    padding-bottom: 2.5em;
+}
+
+.type-title {
+    padding-bottom: .5em;
+}
+.type-detail {
+    padding-bottom: 2em;
+}
+
+/*
+ -- Buttons
+*/
+
+.learn_btn {
+    padding: .875em 2em;
+    background-color: var(--very-light-gray);
+    border-radius: 2em;
+    text-decoration: none;
+}
+
+.learn_btn--sedan {
+    color: var(--bright-orange);
+}
+
+.learn_btn--suv {
+    color: var(--dark-cyan);
+}
+
+.learn_btn--luxury {
+    color: var(--very-dark-cyan);
+}
+
+/*
+ -- Attribution
+*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/*
+ -- Media Queries
+*/
