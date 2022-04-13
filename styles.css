@@ -29,7 +29,18 @@
 }
 
 body {
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
     font-size: var(--font-sm);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: var(--dktp);
 }
 
 .attribution { font-size: 11px; text-align: center; }
