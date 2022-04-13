@@ -117,6 +117,13 @@ section:last-child {
     text-decoration: none;
 }
 
+.learn_btn:hover{
+    transition: 0.2s;
+    background-color: transparent;
+    border: 1px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
 .learn_btn--sedan {
     color: var(--bright-orange);
 }
@@ -138,3 +145,29 @@ section:last-child {
 /*
  -- Media Queries
 */
+@media (min-width: 890px) {
+    .container {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: var(--dktp);
+        min-height: 500px;
+        margin: 0 auto;
+    }
+    section {
+        padding: 3em;
+        max-width: 300px;
+        color: var(--trans-white-p);
+    }
+    
+    section:first-child {
+        margin-top: 0;
+        border-radius: .5em 0 0 .5em;
+    }
+    
+    section:last-child {
+        border-radius: 0 .5em .5em 0;
+        margin-bottom: 0;
+    }
+}
